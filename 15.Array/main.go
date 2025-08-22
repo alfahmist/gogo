@@ -17,8 +17,37 @@ func main() {
 
 	// A.15.2. Inisialisasi Nilai Awal Array
 
+	// cara horizontal
 	var fruits = [4]string{"apple", "grape", "banana", "melon"}
+
+	// cara vertikal
+	// fruits  = [4]string{
+	//     "apple",
+	//     "grape",
+	//     "banana",
+	//     "melon",
+	// }
 	fmt.Println("Jumlah elemen \t\t", len(fruits))
 	fmt.Println("Isi element \t", fruits)
+
+	// tanpa jumlah elemen
+	var numbers = [...]int{2, 3, 2, 4, 3}
+
+	fmt.Println("data array \t:", numbers)
+	fmt.Println("jumlah elemen \t:", len(numbers))
+
+	// Array multi dimensi
+	var numbers1 = [2][3]int{[3]int{3, 2, 3}, [3]int{3, 4, 5}}
+	var numbers2 = [2][3]int{{3, 2, 3}, {3, 4, 5}}
+
+	fmt.Println("numbers1", numbers1)
+	fmt.Println("numbers2", numbers2)
+
+	// A.15.6. Perulangan Elemen Array Menggunakan Keyword for
+
+	for i := 0; i < len(fruits); i++ {
+		fmt.Printf("elemen %d : %s\n", i, fruits[i])
+
+	}
 
 }
