@@ -47,7 +47,25 @@ func main() {
 
 	for i := 0; i < len(fruits); i++ {
 		fmt.Printf("elemen %d : %s\n", i, fruits[i])
-
 	}
 
+	// A.15.7. Perulangan Elemen Array Menggunakan Keyword for - range
+
+	for i, fruits := range fruits {
+		fmt.Printf("Element %d : %s\n", i, fruits)
+	}
+
+	// A.15.8. Penggunaan Variabel Underscore _ Dalam for - range
+
+	for _, fruits := range fruits {
+		fmt.Printf("fruit: %s\n", fruits)
+	}
+
+	// A.15.9. Alokasi Elemen Array Menggunakan Keyword make
+
+	var fruitss = make([]string, 2)
+	fruitss[0] = "apple"
+	fruitss[1] = "manggo"
+
+	fmt.Println(fruitss) // [apple manggo]
 }
